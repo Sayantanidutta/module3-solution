@@ -1,85 +1,117 @@
-body{
+body {
   font-size: 16px;
+  font-family: "Pangolin", sans-serif ;
+}
+#header-nav{
+  background-color: gray;
+	border-radius: 0;
+	border-bottom: 2px solid black;
+  height: 100px;
   color: black;
-  background-color: white;
-  font-family: 'Oxygen', sans-serif;
 }
-
-/** HEADER **/
-#header-nav {
-  height: 65px;
-  background-color: #B0171F;   
-  border-radius: 0;
-  border: 0;
-  margin: 0;
-  border-bottom: 1px solid black;
-}
-
-
 .navbar-brand{
-  margin-left: 25px;
-}
-.container{
-  padding: 0;
+  padding-top: 25px;
 }
 .navbar-brand h1{
-  font-size: 1.5em;
-  font-family: 'Oxygen', sans-serif;
-  color: black;
+  font-size: 40px;
   font-weight: bold;
-  margin-top: 0;
-}
-
-
-#nav-list{
-  margin-top: 0;
-}
-li{
-  background-color: #FFFFCD;
-  margin:0;
-}
-
-
-#li-1, #li-2, #li-3{
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right:1px solid black;
-}
-
-
-.navbar-header button.navbar-toggle{
-  margin-right: 25px;
-  border: 1px solid black;  
-}
-.navbar-header .icon-bar{
-  border: 2px solid black;
-}
-
-#collapsable-nav{
-  border: 0;
-  margin: 0;
-  padding-top: 0;
-}
-
-#nav-list a{
   color: black;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
-#menu{
-  font-size: 35px;
-  font-weight: bold;
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
-
-section {
-  margin: 10px;
+#nav-list {
+  margin-top:0px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
   border: 1px solid black;
-  height: auto;
-  background-color: #ff9912;
-  padding-left: 10px;
-  padding-right: 10px;
 }
-
-h2{
-  font-size: 30px;
-  font-weight: bold;
+#nav-list a:hover {
+  background: gray;
+  border: 1px solid black;
 }
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 30px;
+    height: 60px;
+  }
+  #collapsable-nav{
+    margin-top: 25px;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+   /* End Header */
+ h2{
+    margin-top: 200px;
+  }
+}
+/* START HOME */
+#Chicken-tile, #Beef-tile, #Sushi-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#Chicken-tile:hover, #Beef-tile:hover, #Sushi-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#Chicken-tile { 
+  background-position: center;
+}
+#Beef-tile {  
+  background-position: center;
+}
+#Chicken-tile span, #Beef-tile span, #Sushi-tile span {
+  position: absolute;
+  top: 0;
+  right: 35%;
+  width: 30%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color:grey;
+  color: black;
+  opacity: .8;
+}
+.row{
+  margin:15px;
+}
+#Chicken-tile {
+  background-color: grey;
+  color: black;
+}
+#Beef-tile{
+  background-color: grey;
+  color: black;
+}
+#Sushi-tile{
+   background-color: grey;
+  color: black;
+}
+p{
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+/* END HOME */
