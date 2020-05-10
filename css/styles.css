@@ -1,50 +1,85 @@
+body{
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
 #header-nav {
-  background-color: #999999;
+  height: 65px;
+  background-color: #B0171F;   
   border-radius: 0;
   border: 0;
+  margin: 0;
+  border-bottom: 1px solid black;
 }
-#header-nav .navbar-brand a{
-  color: #ccc;
+
+
+.navbar-brand{
+  margin-left: 25px;
+}
+.container{
+  padding: 0;
+}
+.navbar-brand h1{
+  font-size: 1.5em;
+  font-family: 'Oxygen', sans-serif;
+  color: black;
   font-weight: bold;
+  margin-top: 0;
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-.navbar-brand p { /* Kosher cert */
-  color: #000;
-  text-transform: uppercase;
-  font-size: .7em;
-  margin-top: 15px;
-}
-.navbar-brand p span { /* Star-K */
-  vertical-align: middle;
-}
+
 
 #nav-list{
-  background: white;
-  border: 1px solid #e7e7e7;
   margin-top: 0;
-  margin-bottom: 0;
+}
+li{
+  background-color: #FFFFCD;
+  margin:0;
 }
 
-#nav-list hr{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #e7e7e7;
+
+#li-1, #li-2, #li-3{
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right:1px solid black;
 }
 
-#header-nav span.icon-bar{
-  background: #e7e7e7;
+
+.navbar-header button.navbar-toggle{
+  margin-right: 25px;
+  border: 1px solid black;  
+}
+.navbar-header .icon-bar{
+  border: 2px solid black;
 }
 
-#header-nav .navbar-toggle:hover span.icon-bar, #header-nav .navbar-toggle:focus span.icon-bar{
-  background: #888;
+#collapsable-nav{
+  border: 0;
+  margin: 0;
+  padding-top: 0;
 }
 
-.menu-header{
-  margin-bottom: 40px;
+#nav-list a{
+  color: black;
 }
-.menu-content{
-  background: #999999;
-  margin-bottom: 20px;
+
+#menu{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+section {
+  margin: 10px;
+  border: 1px solid black;
+  height: auto;
+  background-color: #ff9912;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: bold;
 }
