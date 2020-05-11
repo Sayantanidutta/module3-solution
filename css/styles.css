@@ -1,117 +1,50 @@
-body {
-  font-size: 16px;
-  font-family: "Pangolin", sans-serif ;
+#header-nav {
+  background-color: #999999;
+  border-radius: 0;
+  border: 0;
 }
-#header-nav{
-  background-color: gray;
-	border-radius: 0;
-	border-bottom: 2px solid black;
-  height: 100px;
-  color: black;
-}
-.navbar-brand{
-  padding-top: 25px;
-}
-.navbar-brand h1{
-  font-size: 40px;
+#header-nav .navbar-brand a{
+  color: #ccc;
   font-weight: bold;
-  color: black;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-#nav-list {
-  margin-top:0px;
-}
-#nav-list a {
-  color: black;
-  text-align: center;
-  border: 1px solid black;
-}
-#nav-list a:hover {
-  background: gray;
-  border: 1px solid black;
-}
-#nav-list a span {
-  font-size: 1.8em;
-}
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid black;
-}
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
-}
-/* END HEADER */
-@media (max-width: 767px) {
-  /* Header */
-  .navbar-brand {
-    padding-top: 30px;
-    height: 60px;
-  }
-  #collapsable-nav{
-    margin-top: 25px;
-  }
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
-   /* End Header */
- h2{
-    margin-top: 200px;
-  }
-}
-/* START HOME */
-#Chicken-tile, #Beef-tile, #Sushi-tile {
-  height: 250px;
-  width: 100%;
-  margin-bottom: 15px;
-  position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
-}
-#Chicken-tile:hover, #Beef-tile:hover, #Sushi-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
-#Chicken-tile { 
-  background-position: center;
-}
-#Beef-tile {  
-  background-position: center;
-}
-#Chicken-tile span, #Beef-tile span, #Sushi-tile span {
-  position: absolute;
-  top: 0;
-  right: 35%;
-  width: 30%;
-  text-align: center;
-  font-size: 1.6em;
+.navbar-brand p { /* Kosher cert */
+  color: #000;
   text-transform: uppercase;
-  background-color:grey;
-  color: black;
-  opacity: .8;
+  font-size: .7em;
+  margin-top: 15px;
 }
-.row{
-  margin:15px;
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
 }
-#Chicken-tile {
-  background-color: grey;
-  color: black;
+
+#nav-list{
+  background: white;
+  border: 1px solid #e7e7e7;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-#Beef-tile{
-  background-color: grey;
-  color: black;
+
+#nav-list hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #e7e7e7;
 }
-#Sushi-tile{
-   background-color: grey;
-  color: black;
+
+#header-nav span.icon-bar{
+  background: #e7e7e7;
 }
-p{
-  padding-top: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 20px;
-  overflow: hidden;
+
+#header-nav .navbar-toggle:hover span.icon-bar, #header-nav .navbar-toggle:focus span.icon-bar{
+  background: #888;
 }
-/* END HOME */
+
+.menu-header{
+  margin-bottom: 40px;
+}
+.menu-content{
+  background: #999999;
+  margin-bottom: 20px;
+}
